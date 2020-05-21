@@ -12,12 +12,15 @@ script:
 
 
 deploy:
+    edge: true
     provider: elasticbeanstalk
     region: "ap-southeast-2"
     app: "Docker"
     env: "Docker-env"
     bucket_name: "elasticbeanstalk-ap-southeast-2-520547115454"
     bucket_path: "Docker"
+    
+
     
     on:
         branches:
